@@ -1,0 +1,34 @@
+.cart-dropdown-container {
+  position: absolute;
+  width: 260px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
+  top: 90px;
+  right: 200px;
+  z-index: 5;
+
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+  }
+
+  .cart-items {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    margin-top: auto;
+    // padding: 20px 5px;    /* add padding */
+    // font-size: 14px;      /* reduce font size */
+    // white-space: nowrap;  /* prevents text from wrapping */
+    // width: 100%;
+  }
+}
