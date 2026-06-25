@@ -10,6 +10,7 @@
   top: 90px;
   right: 200px;
   z-index: 5;
+  overflow: auto;
 
   .empty-message {
     font-size: 18px;
@@ -20,8 +21,15 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     margin-bottom: 10px;
+    overflow-y: auto;  /* scroll only when needed */
+    overflow-x: hidden;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .button {
