@@ -1,6 +1,5 @@
 import {Fragment, useContext} from 'react'
 import { Outlet, Link} from 'react-router';
-import {UserContext} from '../../contexts/user.context'
 import CrwnLogo from '../../assets/crown.svg?react'
 import CartIcon from '../../components/cart-icon/cart-icon.component'
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component'
@@ -12,7 +11,7 @@ import { selectCurrentUser } from '../../store/user/user.selector';
 import {NavigationContainer, LogoContainer, NavLinks, NavLink} from './navigation.styles'
 
 const Navigation = () => {
-    const currentUser= useSelector(selectCurrentUser);
+    const currentUser = useSelector(selectCurrentUser)
     const {isCartOpen} = useContext(CartContext);
     return(
         <Fragment>
