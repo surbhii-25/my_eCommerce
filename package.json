@@ -17,6 +17,7 @@
     "react-router": "^7.17.0",
     "redux": "^5.0.1",
     "redux-logger": "^3.0.6",
+    "reselect": "^5.2.0",
     "styled-components": "^6.4.3"
   },
   "devDependencies": {
